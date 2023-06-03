@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestController;
+use App\Models\Test;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,8 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {   
-    return view('index');
+    return view('auth.register');
 })->name('Inicio');
+
 
 Route::get('/Producto', function () {
     return view('Product');
@@ -36,9 +40,9 @@ Route::get('/cronometro', function () {
 Route::get('/buy', function () {
     return view('buy');
 })->name('buy');
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+Route::get('/inicio', function () {
+    return view('inicio');
+})->name('inicio');
 
 Route::middleware([
     'auth:sanctum',
@@ -46,6 +50,14 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('inicio');
     })->name('dashboard');
+    
 });
+
+
+
+Route::delete('test/{id}', [TestController::class ,'destroy'])->name('test.delete');
+Route::get('productos/{id}', [TestController::class,'show'])->name('show');
+Route::get('producto/crear', [TestController::class,'create'])->name('create');
+Route::post('productos',[TestController::class,'store'])->name('store');

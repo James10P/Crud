@@ -15,55 +15,50 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">LUKAS LLARBI</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{url('img/Lukasllarbi.png')}}" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('/')}}">INICIO</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('mesas')}}">MESAS</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">BOLIRANA</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('Producto')}}">PRODUCTO</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">USUARIO</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('login')}}">CERRAR SESION</a></li>
-                </ul>
+    <section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
+
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">Please enter your login and password!</p>
+
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="typeEmailX" class="form-control form-control-lg" />
+                <label class="form-label" for="typeEmailX">Email</label>
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                <input type="password" id="typePasswordX" class="form-control form-control-lg" />
+                <label class="form-label" for="typePasswordX">Password</label>
+              </div>
+
+              <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
+
+              <div class="btn btn-info btn-lg btn-block">
+              <a href="{{route ('login')}}"class="btn btn-info btn-lg btn-block">LISTO</a>
+              </div>
+
+              <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+              </div>
+
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        LUKAS
-                        <span class="text-primary">LLARBI</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                    GERENTE ADMINISTRATIVO
-                        <a href="https://api.whatsapp.com/send?phone=573003158894" target=_blank>KAREN CALDERON</a>
-                    </div>
-                    <p class="lead mb-5">“El matrimonio es como las bolas de billar, todo el día chocando y en la noche juntas duermen tranquilas”</p>
-                    <div class="social-icons">
-                        <a class="social-icon" target="_black" href="https://goo.gl/maps/PesA5BqRPPSbgLxG8"><i class="fas fa-map-marker-alt"></i></a>
-                        <a class="social-icon" href="#!"><i class="	fas fa-wine-glass"></i></a>
-                        <a class="social-icon" href="#!"><i class="fas fa-wrench"></i></a>
-                        <a class="social-icon" href="#!"><i class="fa-thin fa-pool-8-ball"></i>></a>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-se
-            </section>
+
+            <div>
+              <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+              </p>
+            </div>
+
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
+      </div>
+    </div>
+  </div>
+</section>
