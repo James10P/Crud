@@ -17,12 +17,12 @@
     </head>
 <body>
 <table class="table caption-top">
-  <caption>QUE ESTAS ORDENANDO MI REY</caption>
+  <caption>LISTO DE USUARIOS</caption>
   <thead>
     <tr>
-      <th scope="col"> Numero de orden</th>
-      <th scope="col">Producto</th>
-      <th scope="col">Detalles</th>
+      <th scope="col"> Numero</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Correo Electronico</th>
     </tr>
   </thead>
   <tbody>
@@ -30,10 +30,7 @@
       <th scope="row">1</th>
       <td>Mark</td>
       <td>Otto</td>
-      <td>
-      <button type="button" class="btn btn-primary btn-sm">Editar</button>
-      <button type="button" class="btn btn-secondary btn-sm">Eliminar</button>
-</td>   
+      <td>@mdo</td>
     </tr>
     <tr>
       <th scope="row">2</th>
@@ -64,16 +61,5 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </tbody>
 </table>
-<center>
-    <div class="row ">
-            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-            <a href="{{route ('Producto')}}"class="btn btn-danger">CANCELAR</a>
-            </div>
-              <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-              <a href="{{route ('DETALLES')}}"class="btn btn-warning btn-block">FACTURA</a>
-              </div>
-              <div>
-          </div>
-    </center>
 </body>
 </html>

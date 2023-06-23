@@ -16,10 +16,38 @@ use App\Models\Test;
 |
 */
 
-Route::get('/', function () {   
-    return view('auth.register');
-})->name('Inicio');
+Route::get('inicio', function () {   
+    return view('inicio');
+})->name('inicio');
 
+Route::get('login', function () {   
+    return view('auth.login');
+})->name('login');
+
+
+Route::get('reset-password', function () {   
+    return view('auth.reset-password');
+})->name('reset-password');
+
+Route::get('details', function () {   
+    return view('details');
+})->name('Details');
+
+Route::get('verify-email', function () {   
+    return view('auth.verify-email');
+})->name('verify-email');
+
+Route::get('register', function () {   
+    return view('auth.register');
+})->name('register');
+
+Route::get('reset-password', function () {   
+    return view('auth.reset-password');
+})->name('reset-password');
+
+Route::get('User', function () {   
+    return view('User');
+})->name('Usuarios');
 
 Route::get('/Producto', function () {
     return view('Product');
@@ -28,6 +56,10 @@ Route::get('/Producto', function () {
 Route::get('/details', function () {
     return view('details');
 })->name('DETALLES');
+
+Route::get('/administrador', function () {
+    return view('admistrador');
+})->name('Administrador');
 
 Route::get('/mesas', function () {
     return view('mesas');
@@ -40,9 +72,6 @@ Route::get('/cronometro', function () {
 Route::get('/buy', function () {
     return view('buy');
 })->name('buy');
-Route::get('/inicio', function () {
-    return view('inicio');
-})->name('inicio');
 
 Route::middleware([
     'auth:sanctum',

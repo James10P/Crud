@@ -25,11 +25,11 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('/')}}">INICIO</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('/mesas')}}">MESAS</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('inicio')}}">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('mesas')}}">MESAS</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">BOLIRANA</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('Producto')}}">PRODUCTO</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">USUARIO</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('User')}}">USUARIO</a></li>
                 </ul>
             </div>
         </nav>
