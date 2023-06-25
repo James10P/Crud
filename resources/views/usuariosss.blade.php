@@ -17,37 +17,47 @@
     </head>
 <body>
 <table class="table caption-top">
-  <caption>LISTO DE USUARIOS</caption>
+  <caption>QUE ESTAS ORDENANDO MI REY</caption>
   <thead>
     <tr>
-      <th scope="col"> Numero</th>
-      <th scope="col">Nombre</th>
+      <th scope="col"> Nombre</th>
       <th scope="col">Correo Electronico</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+  <tr>
+      <th scope="row">Duban Ferney</th>
+      <td>Duban1@gmail.com</td>
+      <td>
+      <div class="row ">
+            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+            <a href="{{route ('edit_usurs')}}"class="btn btn-danger">Editar</a>
+            </div>
+          </div>
+</td>   
     </tr>
     <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
+      <th scope="row">Karen Calderon</th>
+      <td>Karen21@gmail.com</td>
       <td>
-      <button type="button" class="btn btn-primary btn-sm">Editar</button>
-      <button type="button" class="btn btn-secondary btn-sm">Eliminar</button>
+      <div class="row ">
+            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+            <a href="{{route ('edit_usurs')}}"class="btn btn-danger">Editar</a>
+            </div>
+          </div>
 </td>
+</tr>
     <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
+      <th scope="row">James Perdomo</th>
+      <td>James10perdomo@gmail.com</td>
       <td>
-      <button type="button" class="btn btn-primary btn-sm">Editar</button>
-      <button type="button" class="btn btn-secondary btn-sm">Eliminar</button>
-</td>
+      <div class="row ">
+            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+            <a href="{{route ('edit_usurs')}}"class="btn btn-danger">Editar</a>
+            </div>
+          </div>
+              <div>
+          </div>
     </tr>
             <!-- Bootstrap core JS-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -61,5 +71,11 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   </tbody>
 </table>
+<center>
+    <div class="row ">
+            <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+            <a href="{{route ('inicio')}}"class="btn btn-danger">SALIR</a>
+            </div>
+    </center>
 </body>
 </html>

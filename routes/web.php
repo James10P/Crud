@@ -5,6 +5,7 @@ use App\Http\Controllers\TestController;
 use App\Models\Test;
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,10 +21,25 @@ Route::get('inicio', function () {
     return view('inicio');
 })->name('inicio');
 
+Route::get('admi', function () {   
+    return view('admi');
+})->name('admi');
+
 Route::get('login', function () {   
     return view('auth.login');
 })->name('login');
 
+Route::get('edit_usurs', function () {   
+    return view('edit_usurs');
+})->name('edit_usurs');
+
+Route::get('Usuarioss', function () {   
+    return view('Usuarioss');
+})->name('Usuarioss');
+
+Route::get('usuariosss', function () {   
+    return view('usuariosss');
+})->name('usuariosss');
 
 Route::get('reset-password', function () {   
     return view('auth.reset-password');
@@ -45,20 +61,36 @@ Route::get('reset-password', function () {
     return view('auth.reset-password');
 })->name('reset-password');
 
-Route::get('User', function () {   
-    return view('User');
-})->name('Usuarios');
+Route::get('Login_users', function () {   
+    return view('Login_users');
+})->name('Administrador');
+
+Route::get('edit', function () {   
+    return view('edit');
+})->name('Editar');
 
 Route::get('/Producto', function () {
     return view('Product');
 })->name('Producto');
+
+Route::get('Detailss', function () {
+    return view('Detailss');
+})->name('Detailss');
+
+Route::get('/Usurios', function () {
+    return view('Usuarios');
+})->name('LISTA DE USUARIOS');
+
+Route::get('/login.php', function () {
+    return view('login.php');
+})->name('LISTA DE USUARIOS');
 
 Route::get('/details', function () {
     return view('details');
 })->name('DETALLES');
 
 Route::get('/administrador', function () {
-    return view('admistrador');
+    return view('administrador');
 })->name('Administrador');
 
 Route::get('/mesas', function () {

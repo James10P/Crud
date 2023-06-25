@@ -25,10 +25,11 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('/inicio')}}">INICIO</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('inicio')}}">INICIO</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('mesas')}}">MESAS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">BOLIRANA</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('Producto')}}">PRODUCTO</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('Usuarioss')}}">USUARIOS</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('administrador')}}">ADMINISTRADOR</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{url('login')}}">CERRAR SESION</a></li>
                 </ul>
             </div>
@@ -43,38 +44,23 @@
                         <span class="text-primary">LLARBI</span>
                     </h1>
                     <div class="subheading mb-5">
-                    PRODUCTOS
+                    GERENTE ADMINISTRATIVO
+                        <a href="https://api.whatsapp.com/send?phone=573003158894" target=_blank>KAREN CALDERON</a>
                     </div>
-                    <div class="container"> <p class="lead mb-5">¿QUE TE TOMAS POKER O LIGTH?</p>
-                    <div class="row">
-                        <div class="col-md-6"><a  href="{{url('buy')}}"> <img class="img-productos" src="{{url('img/Cerveza.jpg')}}"> </a></div>
-                    <div class="col-md-6"><a  href="{{url('buy')}}"> <img class="img-productos" src="{{url('img/Wisky.jpg')}}"> </a></div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-md-6"><a  href="{{url('details')}}"> <img class="img-productos" src="{{url('img/Aguardiente.jpg')}}"> </a>
-</div>
-                    <div class="col-md-6" ><a  href="{{url('details')}}"> <img class="img-productos" src="{{url('img/Paquetes.jpg')}}" > </a></div>
-                    </div>
-
-
-
-
-</div>
-                   
-
-                    <br></br>
-
+                    <p class="lead mb-5">“El matrimonio es como las bolas de billar, todo el día chocando y en la noche juntas duermen tranquilas”</p>
                     <div class="social-icons">
                         <a class="social-icon" target="_black" href="https://goo.gl/maps/PesA5BqRPPSbgLxG8"><i class="fas fa-map-marker-alt"></i></a>
                         <a class="social-icon" href="#!"><i class="	fas fa-wine-glass"></i></a>
                         <a class="social-icon" href="#!"><i class="fas fa-wrench"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
             </section>
-                    <!-- Bootstrap core JS-->
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-se
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>

@@ -1,80 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-    <title>Cronomemtro</title>
-    <meta name="title" content="Cronometro en javascript">
-    <meta name="description" content="Cronometro en javascript">
-    <meta name="keywords" content="código,cronometro,javascript">
- 
-	<script>
-	var inicio=0;
-	var timeout=0;
- 
-	function empezarDetener(elemento) //como parametro resivo toda la etiqueta imput
-	{
-		if(timeout==0)
-		{
-			// empezar el cronometro
- 
-			elemento.value="Detener";
- 
-			// Obtenemos el valor actual
-            inicio=new Date().getTime();
- 
-			// iniciamos el proceso
-			funcionando();
-		}else{
-			// detemer el cronometro
-			elemento.value="Empezar";
-			clearTimeout(timeout);
-			timeout=0;
-		}
-	}
- 
-	function funcionando()
-	{
-		// obteneos la fecha actual
-		var actual = new Date().getTime();
- 
-		// obtenemos la diferencia entre la fecha actual y la de inicio
-		var diff = new Date(actual-inicio);
-        
-        console.log(diff);
 
-		// mostramos la diferencia entre la fecha actual y la inicial
-		var result=LeadingZero(diff.getUTCHours())+":"+LeadingZero(diff.getUTCMinutes())+":"+LeadingZero(diff.getUTCSeconds());
-		document.getElementById('crono').innerHTML = result;
- 
-		// Indicamos que se ejecute esta función nuevamente dentro de 1 segundo
-        timeout=setTimeout("funcionando()",1000);
-	}
- 
-	/* Funcion que pone un 0 delante de un valor si es necesario */
-	function LeadingZero(Time) {
-		return (Time < 10) ? "0" + Time : + Time;
-	}
-	</script>
- 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cronómetro con JavaScript - By Parzibyte</title>
+	<link rel="stylesheet" href="https://unpkg.com/bulma">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
 	<style>
-		.crono_wrapper {text-align:center;width:200px;}
+		.mdi {
+			font-size: 3rem;
+		}
+
+		#tiempoTranscurrido {
+			font-size: 4rem;
+		}
 	</style>
 </head>
- 
+
+
 <body>
- 
-<h1>Cronometro</h1>
- 
-<div class="crono_wrapper">
-	<h2 id='crono'>00:00:00</h2>
-	<input type="button" value="Empezar" onclick="empezarDetener(this);">
-</div>
- 
-<button type="button" class="btn btn-primary btn-sm">Small button</button>
-<button type="button" class="btn btn-secondary btn-sm">Small button</button>
-
+	<section class="section">
+		<div class="columns">
+			<div class="column has-text-centered">
+				<h2 id="tiempoTranscurrido"></h2>
+				<button class="button is-success is-large" id="btnIniciar"><span class="mdi mdi-play"></span></button>
+				<button class="button is-success is-large" id="btnPausar"><span class="mdi mdi-pause"></span></button>
+				<button class="button is-primary is-large" id="btnMarca"><span class="mdi mdi-flag"></span></button>
+				<button class="button is-warning is-large" id="btnDetener"><span class="mdi mdi-stop"></span></button>
+				<div id="contenedorMarcas">
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="script.js"></script>
 </body>
+
 </html>
-
-
 

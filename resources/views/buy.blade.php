@@ -48,7 +48,25 @@
     </select>
     </div>
           <br>
-          </div>
+     <select class="form-select" aria-label="Default select example">
+    <option selected>¿Algo mas tranqui?</option>
+    <option value="2">AGUA</option>
+    <option value="3">JUGO HIT</option>
+    <option value="4">GASEOSAS</option>
+    <option value="5">Pony malta</option>
+    <option value="5">Jugo en caja</option>
+    </select>
+    </div>
+          <br>
+     <select class="form-select" aria-label="Default select example">
+    <option selected>¿O quieres comer?</option>
+    <option value="2">Paquetes</option>
+    <option value="3">Chocrramo</option>
+    <option value="4">Gansito</option>
+    <option value="5">Pony malta</option>
+    <option value="5">Jugo en caja</option>
+    </select>
+    </div>
      </div>
 <br>
        <div class="row ">

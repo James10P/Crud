@@ -59,9 +59,9 @@
 </td>
 </tr>
     <tr>
-      <th scope="row">Robinson Cortes</th>
-      <td>Poker</td>
-      <td>3500</td>
+      <th scope="row">James Perdomo</th>
+      <td>Andina</td>
+      <td>4500</td>
       <td>
       <div class="row ">
             <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">

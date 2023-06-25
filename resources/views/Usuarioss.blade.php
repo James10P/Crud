@@ -20,56 +20,42 @@
   <caption>QUE ESTAS ORDENANDO MI REY</caption>
   <thead>
     <tr>
-      <th scope="col"> Usuarios</th>
-      <th scope="col">Producto</th>
-      <th scope="col">Detalles</th>
+      <th scope="col"> Nombre</th>
+      <th scope="col">Correo Electronico</th>
     </tr>
   </thead>
   <tbody>
   <tr>
       <th scope="row">Duban Ferney</th>
-      <td>Poker</td>
-      <td>3500</td>
+      <td>Duban1@gmail.com</td>
       <td>
       <div class="row ">
             <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-            <a href="{{route ('Editar')}}"class="btn btn-danger">Editar</a>
+            <a href="{{route ('edit_usurs')}}"class="btn btn-danger">Editar</a>
             </div>
-              <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-              <a href="{{route ('inicio')}}"class="btn btn-warning btn-block">Borrar</a>
-              </div>
-              <div>
           </div>
 </td>   
     </tr>
     <tr>
       <th scope="row">Karen Calderon</th>
-      <td>Paquete de papas</td>
-      <td>2500</td>
+      <td>Karen21@gmail.com</td>
       <td>
       <div class="row ">
             <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-            <a href="{{route ('Editar')}}"class="btn btn-danger">Editar</a>
+            <a href="{{route ('edit_usurs')}}"class="btn btn-danger">Editar</a>
             </div>
-              <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-              <a href="{{route ('inicio')}}"class="btn btn-warning btn-block">Borrar</a>
-              </div>
-              <div>
           </div>
 </td>
 </tr>
     <tr>
-      <th scope="row">Robinson Cortes</th>
-      <td>Poker</td>
-      <td>3500</td>
+    <th scope="row">James Perdomo</th>
+      <td>James10perdomo@gmail.com</td>
       <td>
       <div class="row ">
             <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-            <a href="{{route ('Editar')}}"class="btn btn-danger">Editar</a>
+            <a href="{{route ('edit_usurs')}}"class="btn btn-danger">Editar</a>
             </div>
-              <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-              <a href="{{route ('inicio')}}"class="btn btn-warning btn-block">Borrar</a>
-              </div>
+          </div>
               <div>
           </div>
     </tr>
@@ -88,13 +74,8 @@
 <center>
     <div class="row ">
             <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-            <a href="{{route ('Producto')}}"class="btn btn-danger">CANCELAR</a>
+            <a href="{{route ('inicio')}}"class="btn btn-danger">SALIR</a>
             </div>
-              <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-              <a href="{{route ('DETALLES')}}"class="btn btn-warning btn-block">FACTURA</a>
-              </div>
-              <div>
-          </div>
     </center>
 </body>
 </html>

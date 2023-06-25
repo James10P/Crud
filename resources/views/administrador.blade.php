@@ -20,19 +20,19 @@
             @csrf
 
             <div>
-                <x-label for="email" value="{{ __('Correo Electronico') }}" />
+                <x-label for="email" value="{{ __('Correo Administrador') }}" />
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             </div>
 
             <div class="mt-4">
-                <x-label for="password" value="{{ __('Contraseña') }}" />
+                <x-label for="password" value="{{ __('Tu contraseña') }}" />
                 <x-input id="Contraseña" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
             </div>
 
             <div class="block mt-4">
                 <label for="remember_me" class="flex items-center">
                     <x-checkbox id="remember_me" name="remember" />
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Recuerdame porque estoy') }}</span>
+                    <span class="ml-2 text-sm text-gray-600">{{ __('Recordar') }}</span>
                 </label>
             </div>
 
